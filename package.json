@@ -17,12 +17,13 @@
     "gulp-html-replace": "^1.5.5",
     "gulp-if": "^2.0.0",
     "gulp-imagemin": "*",
-    "gulp-jshint": "*",
+    "gulp-jshint": "^2.0.0",
     "gulp-minify-css": "*",
     "gulp-plumber": "*",
     "gulp-rename": "*",
     "gulp-sass": "*",
-    "gulp-uglify": "*"
+    "gulp-uglify": "*",
+    "jshint": "^2.9.2"
   },
   "dependencies": {
     "gulp-sourcemaps": "^1.6.0",

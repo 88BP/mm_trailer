@@ -5752,6 +5752,54 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*Variables*/
+html {
+  overflow: hidden;
+  height: 100%; }
+
+body {
+  height: 100%;
+  overflow: auto; }
+
+.container-home {
+  padding: 0;
+  position: relative; }
+  .container-home #vid {
+    postiion: relative;
+    min-width: 100%;
+    top: 0;
+    left: 0; }
+  .container-home .logo-container {
+    position: absolute;
+    width: 300px;
+    top: 25px;
+    left: 30px;
+    z-index: 100; }
+  .container-home .content-container {
+    width: 80%;
+    margin: 0 auto; }
+    .container-home .content-container .tag-container {
+      margin: 35px auto; }
+    .container-home .content-container .maincontent {
+      margin-top: 80px; }
+      .container-home .content-container .maincontent .paragraph {
+        padding-right: 150px; }
+        .container-home .content-container .maincontent .paragraph h2 {
+          color: #f8a01b; }
+      .container-home .content-container .maincontent .qna-container {
+        width: 70%;
+        margin-bottom: 30px; }
+  .container-home .form-container {
+    background-color: #b02a4d;
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center; }
+    .container-home .form-container h1 {
+      color: white;
+      font-family: "Gotham A", "Gotham B";
+      font-style: normal;
+      font-weight: 400; }
+
 /* PARTIAL BOOTSTRAP SUPPORT ~34K */
 /*@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";

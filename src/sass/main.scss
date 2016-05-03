@@ -3,6 +3,74 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 
+
+/*Variables*/
+
+html{
+	overflow: hidden;
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	overflow: auto;
+}
+
+.container-home{
+	padding: 0;
+	position: relative;
+
+	#vid{
+		postiion: relative;
+		min-width: 100%;
+		top: 0;
+		left: 0;
+	}
+	.logo-container{
+		position: absolute;
+		width: 300px;
+		top: 25px;
+		left: 30px;
+		z-index: 100;
+	
+	}
+	.content-container{
+		width: 80%;
+		margin: 0 auto;
+
+		.tag-container{
+			margin: 35px auto;
+		}
+		.maincontent{
+			margin-top: 80px;
+			.paragraph{
+				padding-right: 150px;
+				h2{
+					color:#f8a01b;
+				}
+			}
+			.qna-container{
+				width: 70%;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.form-container{
+		background-color:#b02a4d;
+		margin-top: 100px;
+		padding-top: 30px;
+		text-align: center;
+
+		h1{
+			color: white;
+			font-family: "Gotham A", "Gotham B";
+			font-style: normal;
+			font-weight: 400;
+		}
+	}
+}
+
+
 /* PARTIAL BOOTSTRAP SUPPORT ~34K */
 /*@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
