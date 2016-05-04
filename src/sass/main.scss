@@ -7,7 +7,7 @@
 /*Variables*/
 
 html{
-	overflow: hidden;
+	/*overflow: hidden;*/
 	height: 100%;
 }
 
@@ -22,7 +22,7 @@ body{
 
 	#vid{
 		postiion: relative;
-		min-width: 100%;
+		width: 100%;
 		top: 0;
 		left: 0;
 	}
@@ -44,9 +44,21 @@ body{
 		.maincontent{
 			margin-top: 80px;
 			.paragraph{
-				padding-right: 150px;
+				padding-right: 200px;
+				svg{
+					width: 100%;
+				}
 				h2{
 					color:#f8a01b;
+					font-family: "Gotham Cond SSm A", "Gotham Cond SSm B";
+					font-style: normal;
+					font-weight: 600;
+					margin-bottom: 20px;
+				}
+				p{
+					font-family: "Gotham A", "Gotham B";
+					font-style: normal;
+					font-weight: 400;
 				}
 			}
 			.qna-container{
@@ -57,15 +69,49 @@ body{
 	}
 	.form-container{
 		background-color:#b02a4d;
-		margin-top: 100px;
+		margin-top: 150px;
 		padding-top: 30px;
-		text-align: center;
+		padding-bottom: 50px;
+		
 
 		h1{
 			color: white;
+			font-family: "Gotham Cond SSm A", "Gotham Cond SSm B";
+			font-style: normal;
+			font-weight: 600;
+			text-align: left;
+			margin-bottom: 50px;
+		}
+		form{
+			width: 500px;
+			margin: 0 auto;
 			font-family: "Gotham A", "Gotham B";
 			font-style: normal;
 			font-weight: 400;
+			
+			input{
+				margin: 5px 0 5px 0;
+				border: 2px solid white;
+				background-color:#b02a4d;
+				color: white;
+				padding: 7px;
+				outline: none;
+				&:focus{
+					border: 2px solid #2a2d2e;
+				}
+			}
+			input[type=text]{
+				width: 500px;
+				
+			}
+			input[type=submit]{
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			.textbox{
+				padding-bottom: 100px;
+			}
+
 		}
 	}
 }
