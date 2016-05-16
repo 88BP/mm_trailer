@@ -18,29 +18,30 @@
     </head>
     <body>
         <div class="container-fluid container-home">
-            
-             <video autoplay muted loop id="vid">
-                <source src="img/home_intro.mp4">
-            </video>
-            <div class="logo-container">
-                <img src="img/mmlogo.svg" />
-            </div>
-            <div class="arrow-container">
-                <a id="arrow-link" class="link" href="#"><span class="glyphicon glyphicon-chevron-down"></span></a>
-            </div>
-            <div class="play-container">
-                <img src="img/playbutton.svg" />
-            </div>
-           
-
-            <div class="content-container">
-                 <div class="tag-container">
+        <div class="video-container">
+                 <video autoplay muted loop id="vid">
+                    <source src="img/home_intro.mp4">
+                </video>
+                <div class="logo-container">
+                    <img src="img/mmlogo.svg" />
+                </div>
+                <div class="tag-container">
                     <img src="img/tagline.svg" />
                 </div>
+                <div class="arrow-container">
+                    <a id="arrow-link" class="link" href="#"><span class="glyphicon glyphicon-chevron-down"></span></a>
+                </div>
+                <div class="play-container">
+                    <img src="img/playbutton.svg" />
+                </div>
+           </div>
+
+            <div class="content-container">
+                 
                 <div class="row maincontent">
                     <div id="arrow-end"></div>
                     <div class="col-md-9 col-sm-9 col-xs-12 paragraph">
-                        <div class="bar-container">
+                    <!--     <div class="bar-container">
                             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  viewBox="0 0 473.4 4.3" style="enable-background:new 0 0 473.4 4.3;" xml:space="preserve">
                             <style type="text/css">
@@ -58,16 +59,20 @@
                                 <rect id="XMLID_5_" x="378.7" y="0" class="st1" width="94.7" height="4.3"/>
                             </g>
                             </svg>
-                        </div>
-                        <h2>LOVE THEM, HATE THEM, THEY'RE HERE.</h2>
-                        <p>88 Brand Partners and QNA teamed up to uncover exactly how MIllennials interact with service-related brands. In our research, we found who they are, how they buy, how they think, how they interact, what they value and white it all means to you. Let us show you how to connect to them.</p>
+                        </div> -->
+                        <h1>LOVE THEM, HATE THEM, THEY'RE HERE.</h1>
+                        <p>QNA Group and 88 Brand Partners, two of Chicago’s leading research and communications firms, teamed up to uncover exactly how Millennials interact with service-related brands. Through our research, we found who they are, how they buy, how they think, how they interact, what they value and what it all means to you. This study aims to give service brands a better idea of how to refine their marketing approach to more successfully reach and engage with this misunderstood group, which just so happens to be the most valuable segment in today’s marketplace.</p>
                     </div>
                     <div class="col-md-3 col-sm-3 col-xs-5">
                         <div class="qna-container">
-                            <img src="img/qna.svg" />
+                            <a href="http://www.qna-group.com" target="_blank">
+                                <img src="img/qna.svg" />
+                            </a>
                         </div>
                         <div class="88-container">
-                            <img src="img/88.svg" />
+                            <a href="http://88brandpartners.com" target="_blank">
+                                <img src="img/88.svg" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -75,12 +80,13 @@
             <div class="form-container">
                 
                 <form class="connect-form">
-                    <h1>CONNECT</h1>
+                    <h2>CONNECT</h2>
+                    <p>To request a presentation of our findings, please fill out the field below and we will be in touch with you shortly.</p>
                     <input type="text" id="name" name="name" placeholder="NAME" required><br>
                     <input type="text" id="company" name="company" placeholder="COMPANY" required><br>
                     <input type="text" id="email" name="email" placeholder="EMAIL ADDRESS" required><br>
                     <input type="text" id="phone" name="phone" placeholder="PHONE NUMBER"required><br>
-                    <input type="text" id="message" name="message" placeholder="ANYTHING ELSE YOU'D LIKE US TO KNOW?" class="textbox"><br>
+                    <input type="text" id="message" name="message" placeholder="ANYTHING ELSE?" class="textbox"><br>
                     <input type="submit" value="SUBMIT" id="submit">
                 </form>
 

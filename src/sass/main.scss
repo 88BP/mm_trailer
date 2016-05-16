@@ -23,73 +23,81 @@ body{
 	padding: 0;
 	position: relative;
 
+.video-container{
+	position: relative;
+
+
+
 	#vid{
 		postiion: relative;
 		width: 100%;
 		top: 0;
 		left: 0;
+		z-index: -100;
 	}
 	.logo-container{
 		position: absolute;
 		width: 30%;
 		max-width: 300px;
-		top: 25px;
-		left: 30px;
+		bottom: 35px;
+		right: 50px;
 		z-index: 100;
 	
 	}
+	.tag-container{
+		position: absolute;
+		top: 50px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 40px 0 50px;
+	}
 	.arrow-container{
-		position: relative;
-		top: -30px;
+		position: absolute;
+		bottom: 25px;
+		width: 15%;
 		left: 50%;
 		z-index: 100;
 		color: white;
-		font-size: 1.2em;
+		font-size: 1.5em;
 		max-width: 50px;
 		a{
 			color: white;
 		}
-	
 	}
-
 	.play-container{
 		display: none;
-		position: relative;
-		top: -400px;
-		z-index: 100;
-		color: white;
-		font-size: 1.2em;
-		max-width: 100px;
-		margin: 0 auto;
-		padding-left: 15px;
-		cursor: pointer;
+		position: absolute;
+	
 	}
+}
 	.content-container{
 		width: 80%;
 		margin: 0 auto;
 
-		.tag-container{
-			margin: 35px auto;
-		}
+		
 		.maincontent{
-			margin-top: 20px;
+			margin-top: 50px;
 			.paragraph{
 				padding-right: 20px;
 				svg{
 					width: 100%;
 				}
-				h2{
+				h1{
 					color:#f8a01b;
 					font-family: "Gotham Cond SSm A", "Gotham Cond SSm B";
 					font-style: normal;
 					font-weight: 600;
+					margin-top: 0;
 					margin-bottom: 20px;
+					line-height: 100%;
+					font-size: 4em;
 				}
 				p{
 					font-family: "Gotham A", "Gotham B";
 					font-style: normal;
 					font-weight: 400;
 					margin-bottom: 50px;
+					font-size: 1.2em;
 				}
 			}
 			.qna-container{
@@ -103,15 +111,21 @@ body{
 		margin-top: 50px;
 		padding-top: 30px;
 		padding-bottom: 50px;
+		color: white;
 		
 
-		h1{
+		h2{
 			color: white;
 			font-family: "Gotham Cond SSm A", "Gotham Cond SSm B";
+			font-size: 3.5em;
 			font-style: normal;
 			font-weight: 600;
 			text-align: left;
-			margin-bottom: 50px;
+			margin-bottom: 10px;
+		}
+
+		p{
+			margin-bottom: 40px;
 		}
 		form{
 			width: 300px;
@@ -169,19 +183,30 @@ body{
 
 @media all and (min-width: 768px){
 	.container-home{
+		.video-container{
 		.arrow-container{
 			font-size: 1.5em;
-			top: -35px;
 		}
 		.play-container{
 			display: block;
-			top:-250px;
+			position: absolute;
+			top: 50%;
+			left: 44%;
+			z-index: 100;
+			color: white;
+			font-size: 1.2em;
+			width: 100px;
+			cursor: pointer;
 		}
+	}
 		.content-container{
 			.maincontent{
-				margin-top: 50px;
+				margin-top: 100px;
 				.paragraph{
 					padding-right: 100px;
+				}
+				.qna-container{
+					margin-top: 75px;
 				}
 			}
 		}
@@ -192,24 +217,32 @@ body{
 					width: 500px;
 				}
 			}
+		
 		}
-	}
+	
+}
 }
 
 @media all and (min-width: 1024px){
 	.container-home{
+		.video-container{
 		.arrow-container{
 			font-size: 1.8em;
-			top: -50px;
 		}
 		.play-container{
-			top: -400px;
+			left: 47%;
+		
 		}
+	}
+		
 		.content-container{
 			.maincontent{
-				margin-top: 80px;
+				margin-top: 100px;
 				.paragraph{
 					padding-right: 200px;
+				}
+				.qna-container{
+					margin-top: 100px;
 				}
 			}
 		}
