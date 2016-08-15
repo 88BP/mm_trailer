@@ -20,7 +20,7 @@
         <div class="container-fluid container-home">
         <div class="video-container">
                  <video autoplay muted loop id="vid">
-                    <source src="img/home_intro.mp4">
+                    <source src="https://s3.amazonaws.com/millennials-videos/1369_Teaser_Intro.mp4">
                 </video>
                 <div class="logo-container">
                     <img src="img/mmlogo.svg" />
@@ -88,14 +88,18 @@
                     <input type="text" id="phone" name="phone" placeholder="PHONE NUMBER"required><br>
                     <input type="text" id="message" name="message" placeholder="ANYTHING ELSE?" class="textbox"><br>
                     <input type="submit" value="SUBMIT" id="submit">
+                    <div class ="form-success">
+                            <span class="glyphicon glyphicon-ok-sign"></span><p>   THANK YOU!</p>
+
+                    </div>
                 </form>
 
-            </div>
         </div>
 
 
         <!-- build:js-footer -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
         <script src="js/main.js"></script>
         <!-- endbuild -->
 

@@ -1,10 +1,30 @@
 console.log('main.js');
 
-$("#submit").click(function(){
-   $.ajax({url: "php/mailer.php", type: 'POST', success: function(result){
-       $("form").hide();
-   }});
-   return false;
+var myFirebaseRef = new Firebase("https://radiant-fire-5832.firebaseio.com");
+
+$("#submit").click(function(e) {
+
+	var formData = {
+	    'name': $('#name').val(),
+	    'email': $('#email').val(),
+	    'company': $('#company').val(),
+	    'phone': $('#phone').val(),
+	    'message': $('#message').val()
+	};
+
+    $.ajax({
+        url: "php/mailer.php",
+        type: 'POST',
+        data: formData,
+        success: function(result) {
+            $(".connect-form").trigger("reset");
+            $(".form-success").show();
+        },
+				error: function(error) {
+					console.log(error);
+				}
+    });
+    e.preventDefault();
 });
 
 function scrollToAnchor(){
